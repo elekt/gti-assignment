@@ -28,7 +28,7 @@ Code formatting is done by `black`
     ```black src```
 
 ## Data exploration
-Data exploration is utilizing the data loading and exploring the datarames in a jupyter notebook. Start the noteook like:
+Data exploration is utilizing the data loading and exploring the dataframes in a jupyter notebook. Start the notebook like:
     ```jupyter notebook```
 
 Select the file `notebooks/data-exploration.ipynb`
@@ -36,7 +36,7 @@ Select the file `notebooks/data-exploration.ipynb`
 ## Further development
 - [] error handling, tests
 - [] data fetching from opentender.eu
-- [] adding docstrings for methods
+- [] adding docstrings
 - [] sphynx documentation generation based on docstrings
 - [] instead of local data persistence have a cloud based backend for the cleaned data
 - [] more insightful statistics and plots

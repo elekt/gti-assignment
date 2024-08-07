@@ -10,10 +10,10 @@ from typing import List
 ZIP_FOLDER = os.path.join(os.getcwd(), f"data")
 ZIP_EXTRACT_FOLDER = os.path.join(os.getcwd(), "data/extracted")
 
-
+"""
+Failing method, stuck on HTTP error code 403 & 405 when fetching data, fix needed
+"""
 def download_procurement_data(cc: str):
-    # URL = f"https://opentender.eu/data/downloads/data-{cc}-csv.zip"
-
     URL = f"https://opentender.eu/data/downloads/data-{cc}-csv.zip"
 
     with requests.Session() as s:
@@ -71,7 +71,7 @@ def load_data_to_pandas(cc: str, years: List[int]) -> pd.DataFrame:
             sep=";",
             header=0,
             low_memory=False,
-            parse_dates=date_cols,
+            parse_dates=True,
             date_format=dateparse,
         )
         df[date_cols] = df[date_cols].apply(pd.to_datetime, format="%Y-%m-%d")
