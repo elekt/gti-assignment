@@ -2,8 +2,6 @@ import argparse
 import datetime
 import logging
 
-import os
-print(os.getcwd())
 from src.util.fetch import (
     unzip_downloaded_data,
     download_procurement_data,
