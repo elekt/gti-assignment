@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gti-assignment"
+version = "0.1.0"
+description = ""
+authors = ["Tamas Elekes <elekestamas22@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+argparse = "^1.4.0"
+black = "^24.8.0"
+pandas = "^2.2.2"
+requests = "^2.32.3"
+scrapy = "^2.11.2"
+jupyter = "^1.0.0"
+plotly = "^5.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
